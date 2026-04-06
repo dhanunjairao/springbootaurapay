@@ -153,3 +153,14 @@ frontend/src/
   App.tsx     Page routing and auth state
   index.css   Global styles
 ```
+## Screenshots
+
+### Home Page
+
+<img width="472" height="699" alt="Screenshot 1948-01-16 at 4 36 25 PM" src="https://github.com/user-attachments/assets/b663afac-dbcd-43aa-b5a1-3ca7a8752e1f" />
+
+#account
+
+<img width="554" height="702" alt="Screenshot 1948-01-16 at 4 36 18 PM" src="https://github.com/user-attachments/assets/8e6df118-9a95-4fa1-9d5e-ab4249a6c9ce" />
+
+
