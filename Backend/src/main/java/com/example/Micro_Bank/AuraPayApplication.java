@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroBankApplication {
+public class AuraPayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MicroBankApplication.class, args);
+		SpringApplication.run(AuraPayApplication.class, args);
 	}
 
 }

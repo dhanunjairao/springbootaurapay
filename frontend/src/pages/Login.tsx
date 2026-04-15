@@ -29,7 +29,7 @@ export default function Login({ onLogin, goToRegister }: Props) {
   return (
     <div className="auth-box">
       <h2>Welcome back</h2>
-      <p className="subtitle">Log in to your Micro Bank account</p>
+      <p className="subtitle">Log in to your AuraPay account</p>
       <form onSubmit={handleSubmit}>
         <label>Email</label>
         <input type="email" value={email} onChange={e => setEmail(e.target.value)} required />

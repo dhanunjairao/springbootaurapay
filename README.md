@@ -1,4 +1,4 @@
-# Micro Bank
+# AuraPay
 
 A full-stack banking application built with Spring Boot and React.
 
@@ -7,7 +7,7 @@ A full-stack banking application built with Spring Boot and React.
 ## Project Structure
 
 ```
-Micro-Bank/
+AuraPay/
   Backend/    Spring Boot REST API
   frontend/   React + TypeScript frontend
 ```
@@ -18,7 +18,7 @@ Micro-Bank/
 
 **Stack:** Java 21, Spring Boot 3.5.13, Spring Security, JWT, JPA, MySQL
 
-**Package:** `com.example.Micro_Bank`
+**Package:** `com.example.Micro_Bank` (simplified to AuraPay)
 
 ### Setup
 
@@ -115,6 +115,7 @@ Backend/src/main/java/com/example/Micro_Bank/
   Repository/       JPA repositories
   Security/         JwtUtil, JwtFilter, SecurityConfig
   Service/          AccountService, TransactionService, UserService
+  AuraPayApplication.java  Main application file
 ```
 
 ---

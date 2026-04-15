@@ -1,0 +1,36 @@
+services:
+  # ── Backend Service (Spring Boot) ──────────────────────────────────────────
+  - type: web
+    name: aurapay-backend
+    env: docker
+    dockerContext: Backend
+    dockerfilePath: Backend/Dockerfile
+    plan: free
+    envVars:
+      - key: JWT_SECRET
+        sync: false
+      - key: PORT
+        value: 9090
+      - key: SPRING_DATASOURCE_URL
+        sync: false # Set your External MySQL URL here
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false # Set your MySQL username here
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false # Set your MySQL password here
+      - key: SPRING_DATASOURCE_DRIVER
+        value: com.mysql.cj.jdbc.Driver
+      - key: SPRING_JPA_DIALECT
+        value: org.hibernate.dialect.MySQLDialect
+
+  # ── Frontend Service (React + Nginx) ───────────────────────────────────────
+  - type: web
+    name: aurapay-frontend
+    env: docker
+    dockerContext: frontend
+    dockerfilePath: frontend/Dockerfile
+    plan: free
+    # Note: Vite env vars are baked in at build time.
+    # You may need to update this URL once your backend is deployed.
+    dockerBuildArgs:
+      - arg: VITE_API_URL
+        value: https://aurapay-backend.onrender.com

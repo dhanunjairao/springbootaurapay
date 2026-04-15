@@ -27,7 +27,7 @@ export default function Register({ onRegister, goToLogin }: Props) {
   return (
     <div className="auth-box">
       <h2>Create an account</h2>
-      <p className="subtitle">Start banking with Micro Bank</p>
+      <p className="subtitle">Start banking with AuraPay</p>
       <form onSubmit={handleSubmit}>
         <label>Name</label>
         <input type="text" value={name} onChange={e => setName(e.target.value)} required />
