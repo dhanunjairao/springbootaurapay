@@ -33,4 +33,4 @@ services:
     # You may need to update this URL once your backend is deployed.
     dockerBuildArgs:
       - arg: VITE_API_URL
-        value: https://aurapay-backend.onrender.com
+        value: https://springbootaurapay.onrender.com
